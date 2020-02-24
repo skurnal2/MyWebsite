@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Siddharth Kurnal - Portfolio</title>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.hover3d.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
+
+	
+
+</head>
+<body>
+	<div class="project">
+		<div class="project__card">
+			<div class="project_title">
+					<h1>Sid's Portfolio</h1>
+				</div>
+			<div class="project__detail">				
+				<div class="show-item">
+					Laptop Catalog
+				</div>
+			</div>	
+			<div class="project__detail">				
+				<div class="show-item">
+					Laptop Catalog
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<script>
+		$(".project").hover3d({
+			selector: ".project__card",						
+			sensitivity: 20,
+			hoverInClass: "hover-in",
+			hoverOutClass: "hover-out",
+			hoverClass: "hover-3d"
+		});
+	</script>
+</body>
+</html>
