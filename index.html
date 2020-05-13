@@ -27,14 +27,21 @@
 					&times;
 				</div>			
 					Laptop Catalog<br/>
-					<iframe src="http://www.laautodetail.com"></iframe>
+					<iframe src="http://www.siddharthkurnal.com/CatalogProject/"></iframe>
 			</span>	
-			<span href="ImagesProject" class="project__detail">	
+			<span class="project__detail">	
 				<div class="close-window">
 					&times;
 				</div>			
 					Image Gallery<br/>
-					<iframe src="https://www.w3schools.com"></iframe>
+					<iframe src="http://www.siddharthkurnal.com/ImagesProject/"></iframe>
+			</span>	
+			<span class="project__detail">
+				<div class="close-window">
+					&times;
+				</div>			
+					LA Auto Detailing<br/>
+					<iframe src="http://www.laautodetail.com"></iframe>
 			</span>	
 			
 			<br/><p style="font-family: 'Courgette', 'Comic Sans MS';">More to be uploaded very soon...!</p>
@@ -56,11 +63,12 @@
 		 	 	$('span').removeClass("width-increase");
 		 	 	$('span').find(".close-window").delay(500).hide();
     			$('span').find(".close-window").delay(1000).css("font-size","0rem");
+    			$('span').find("iframe").hide(); 
     			$('span').find(".close-window").css("background-color","transparent");   
     			event.stopPropagation();
 		 	 }
 
-    			$(this).addClass("width-increase").find("iframe").fadeIn(); 
+    			$(this).addClass("width-increase").find("iframe").show(); 
     			$(this).find(".close-window").delay(500).show();
     			$(this).find(".close-window").delay(1000).css("font-size","4rem");
     			$(this).find(".close-window").css("background-color","#eb4034");    
@@ -77,7 +85,7 @@
 
 		 		$('span').removeClass("width-increase");	
 		 		$(this).delay(500).hide();
-		 		$('span').find("iframe").fadeOut(); 
+		 		$('span').find("iframe").hide(); 
 			 	$(this).delay(1000).css("font-size","0rem");
     			 $(this).find(".close-window").css("background-color","transparent");	 
 			 }
