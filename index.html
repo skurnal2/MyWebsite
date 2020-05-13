@@ -22,12 +22,20 @@
 			<div class="project_title">
 				<h1>Sid's Portfolio</h1>
 			</div>
-			<a href="CatalogProject" class="project__detail">			
+			<span class="project__detail">
+				<div class="close-window">
+					Close
+				</div>			
 					Laptop Catalog
-			</a>	
-			<a href="CatalogProject" class="project__detail">			
-					Laptop Catalog
-			</a>	
+			</span>	
+			<span href="ImagesProject" class="project__detail">	
+				<div class="close-window">
+					Close
+				</div>			
+					Image Gallery
+			</span>	
+			
+			<br/><p style="font-family: 'Courgette', 'Comic Sans MS';">More to be uploaded very soon...!</p>
 		</div>
 	</div>
 
@@ -39,6 +47,29 @@
 			hoverOutClass: "hover-out",
 			hoverClass: "hover-3d"
 		});
+
+		 $('span').click(function(event){
+    			$(this).addClass("width-increase");
+    			$(this).find(".close-window").delay(500).show();
+    			$(this).find(".close-window").delay(1000).css("font-size","2rem");
+    			$(this).find(".close-window").css("background-color","#eb4034");    			
+		  });
+
+		 $(".close-window").click(function(event){
+		 	 
+			event.stopPropagation();
+
+		 	 if ($('span').hasClass("width-increase")) {
+		 		$('span').removeClass("width-increase");	
+		 		$(this).find(".close-window").delay(500).hide();
+			 $(this).find(".close-window").delay(1000).css("font-size","0rem");
+    		 $(this).find(".close-window").css("background-color","transparent");	 
+			 }
+
+
+
+		 	
+		 })
 	</script>
 </body>
 </html>
