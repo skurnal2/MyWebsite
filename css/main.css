@@ -186,3 +186,32 @@ iframe {
   height: 75%; 
   border: none;
 }
+
+span span {
+  font-size: .75rem;
+  color: #a24f5e;  
+}
+
+@media only screen and (max-width: 1280px) {
+
+  span span {
+    display: none;
+  }
+
+  }
+
+span a {
+  text-decoration: none;
+  font-family: monospace;
+  color: white;
+  background-color: #4286f4;
+  padding: .5rem;  
+  margin-left: 1rem;
+  border-radius: 1rem;
+  transition: .5s;
+  display: none;
+}
+
+span a:hover {
+  box-shadow: 0 8px 6px -6px black;
+}

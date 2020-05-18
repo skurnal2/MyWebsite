@@ -20,31 +20,69 @@
 	<div class="project">
 		<div class="project__card">
 			<div class="project_title">
-				<h1>Sid's Portfolio</h1>
+				<h1>Sid's Portfolio</h1>				
 			</div>
 			<span class="project__detail">
 				<div class="close-window">
 					&times;
 				</div>			
-					Laptop Catalog<br/>
+					LA Auto Detailing
+					<a href="http://www.laautodetail.com">LINK</a>
+					<br/>
+					<iframe src="http://www.laautodetail.com"></iframe>
+			</span>
+
+			<span class="project__detail">
+				<div class="close-window">
+					&times;
+				</div>			
+					HighwayDodge
+					<a href="https://drive.google.com/file/d/1pXig8abeOLf7wZzlKjPr2EBpHodLBv3V/view?usp=sharing">LINK</a>
+					<br/>
+					<iframe src="https://drive.google.com/file/d/1z1Sbw1k4EQXzduhPG7mFEKw5nQz-91PM/preview" width="640" height="480"></iframe>
+			</span>
+
+			<span class="project__detail">
+				<div class="close-window">
+					&times;
+				</div>			
+					Laptop Catalog
+					<a href="http://www.siddharthkurnal.com/CatalogProject/">LINK</a>
+					<br/>
 					<iframe src="http://www.siddharthkurnal.com/CatalogProject/"></iframe>
 			</span>	
 			<span class="project__detail">	
 				<div class="close-window">
 					&times;
 				</div>			
-					Image Gallery<br/>
+					Image Gallery
+					<a href="http://www.siddharthkurnal.com/ImagesProject/">LINK</a>
+					<br/>
 					<iframe src="http://www.siddharthkurnal.com/ImagesProject/"></iframe>
 			</span>	
 			<span class="project__detail">
 				<div class="close-window">
 					&times;
 				</div>			
-					LA Auto Detailing<br/>
-					<iframe src="http://www.laautodetail.com"></iframe>
+					Travel Globe
+					<span>(Not Responsive)</span>
+					<a href="http://www.siddharthkurnal.com/TravelGlobe/Website.html">LINK</a>
+					<br/>
+					<iframe src="http://www.siddharthkurnal.com/TravelGlobe/Website.html"></iframe>
 			</span>	
+			<span class="project__detail">
+				<div class="close-window">
+					&times;
+				</div>			
+					SpaceInfo
+					<span>(Not Responsive)</span>
+					<a href="http://www.siddharthkurnal.com/SpaceInfo/project.html">LINK</a>
+					<br/>
+					<iframe src="http://www.siddharthkurnal.com/SpaceInfo/project.html"></iframe>
+			</span>	
+				
 			
-			<br/><p style="font-family: 'Courgette', 'Comic Sans MS';">More to be uploaded very soon...!</p>
+			<br/><br/><p style="font-family: 'Courgette', 'Comic Sans MS';">More to be uploaded very soon...!</p>
 		</div>
 	</div>
 
@@ -64,6 +102,7 @@
 		 	 	$('span').find(".close-window").delay(500).hide();
     			$('span').find(".close-window").delay(1000).css("font-size","0rem");
     			$('span').find("iframe").hide(); 
+    			$('span').find("a").hide(); 
     			$('span').find(".close-window").css("background-color","transparent");   
     			event.stopPropagation();
 		 	 }
@@ -71,7 +110,8 @@
     			$(this).addClass("width-increase").find("iframe").show(); 
     			$(this).find(".close-window").delay(500).show();
     			$(this).find(".close-window").delay(1000).css("font-size","4rem");
-    			$(this).find(".close-window").css("background-color","#eb4034");    
+    			$(this).find(".close-window").css("background-color","#eb4034"); 
+    			$(this).find("a").show();    
 
 
 
@@ -82,7 +122,7 @@
 			event.stopPropagation();
 
 		 	 if ($('span').hasClass("width-increase")) {
-
+				$('span').find("a").hide(); 
 		 		$('span').removeClass("width-increase");	
 		 		$(this).delay(500).hide();
 		 		$('span').find("iframe").hide(); 
